@@ -1,7 +1,7 @@
 
 # Fordi Python ikke har nogen interfaces, har vi lavet to skelet-klasser
 class TodoList:
-    items = [] 
+    items = []
 
     def __init__(self):
         pass
@@ -13,13 +13,13 @@ class TodoList:
         return self.items.pop(index)
 
     def get(self, index):
-        pass
+        return self.items[index]
 
     def list(self):
-        pass
+        return self.items
 
     def size(self):
-        pass
+        return len(self.items)
 
 
 class TodoCLI:
