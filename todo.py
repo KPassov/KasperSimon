@@ -1,16 +1,16 @@
 
 # Fordi Python ikke har nogen interfaces, har vi lavet to skelet-klasser
 class TodoList:
-    items = ...
+    items = [] 
 
     def __init__(self):
         pass
 
     def add(self, title):
-        pass
+        return self.items.append(title)
 
     def remove(self, index):
-        pass
+        return self.items.pop(index)
 
     def get(self, index):
         pass
